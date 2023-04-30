@@ -1,0 +1,141 @@
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700;900&display=swap");
+body {
+  font-family: "Merriweather", serif;
+  width: 100%;
+  margin: 0;
+}
+body .header {
+  display: grid;
+  grid-template-columns: 7% 75.5% 17.5%;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  font-size: 48px;
+  font-weight: 900;
+  width: 100%;
+  height: 100px;
+  background-color: white;
+}
+body .header span,
+body .header .header__img img {
+  cursor: pointer;
+}
+body .header .header__img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body .header .header__img img {
+  width: 32px;
+  height: 32px;
+}
+body .main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 100px;
+}
+body .main .main__img {
+  background-image: url("../../img/main_newspaper.jpg");
+  background-size: cover;
+  background-position: center center;
+  width: 55%;
+  height: 65vh;
+}
+body .main .main__title {
+  font-size: 28px;
+  font-weight: 400;
+  margin-top: 1.5em;
+}
+body .main .main__about {
+  width: 80%;
+  font-size: 27px;
+  margin-top: 3.5em;
+}
+body .main .main__contents {
+  display: flex;
+  flex-direction: column;
+  margin-top: 7.5em;
+  width: 80%;
+}
+body .main .main__contents .main__content {
+  display: grid;
+  grid-template-columns: 48.5% 48.5%;
+  justify-content: space-between;
+  border-top: 1px solid #dadada;
+  padding: 22px 0;
+}
+body .main .main__contents .main__content:last-child {
+  border-bottom: 1px solid #dadada;
+}
+body .main .main__contents .main__content .main__content-info span {
+  font-size: 21px;
+  font-weight: 600;
+}
+body .main .main__contents .main__content .main__content-info p {
+  font-size: 30px;
+  font-weight: 300;
+}
+body .main .main__contents .main__content .main__content-info button {
+  font-size: 16px;
+  font-weight: 600;
+  background: none;
+  border: 1px solid #dadada;
+  border-radius: 25px;
+  padding: 10px 30px;
+  margin-right: 10px;
+}
+body .main .main__contents .main__content .main__content-info button:hover {
+  background-color: black;
+  color: white;
+  cursor: pointer;
+}
+body .main .main__contents .main__content .main__content-img--first,
+body .main .main__contents .main__content .main__content-img--second {
+  background-size: cover;
+  background-position: center center;
+  height: 50vh;
+}
+body .main .main__contents .main__content .main__content-img--first {
+  background-image: url("../../img/first_newspaper.jpg");
+}
+body .main .main__contents .main__content .main__content-img--second {
+  background-image: url("../../img/second_newspaper.jpg");
+}
+body .footer {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
+  background-color: #464646;
+  color: white;
+  height: 100%;
+  margin-top: 6.5%;
+  padding: 2% 0 5% 10%;
+}
+body .footer .footer__main {
+  display: flex;
+  flex-direction: column;
+  font-size: 14px;
+  font-weight: 300;
+}
+body .footer .footer__main .footer__schwartz {
+  font-size: 22px;
+  font-weight: 600;
+  margin-bottom: 15%;
+}
+body .footer .footer__main div {
+  display: flex;
+  flex-direction: column;
+  margin-top: 4%;
+}
+body .footer .footer__main div a {
+  padding-bottom: 1%;
+}
+body .footer .footer__media,
+body .footer .footer__books {
+  font-size: 14px;
+  font-weight: 300;
+}
+body .footer a span {
+  text-decoration: none;
+  cursor: pointer;
+}/*# sourceMappingURL=styles.css.map */

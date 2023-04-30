@@ -1,0 +1,170 @@
+@import "_variables";
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700;900&display=swap");
+
+body {
+  font-family: "Merriweather", serif;
+  width: 100%;
+  margin: 0;
+
+  .header {
+    display: grid;
+    grid-template-columns: 7% 75.5% 17.5%;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    font-size: 48px;
+    font-weight: 900;
+    width: 100%;
+    height: 100px;
+    background-color: $white;
+
+    span,
+    .header__img img {
+      cursor: pointer;
+    }
+
+    .header__img {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      img {
+        width: 32px;
+        height: 32px;
+      }
+    }
+  }
+
+  .main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 100px;
+
+    .main__img {
+      background-image: url("../../img/main_newspaper.jpg");
+      background-size: cover;
+      background-position: center center;
+      width: 55%;
+      height: 65vh;
+    }
+
+    .main__title {
+      font-size: 28px;
+      font-weight: 400;
+      margin-top: 1.5em;
+    }
+
+    .main__about {
+      width: 80%;
+      font-size: 27px;
+      margin-top: 3.5em;
+    }
+
+    .main__contents {
+      display: flex;
+      flex-direction: column;
+      margin-top: 7.5em;
+      width: 80%;
+
+      .main__content {
+        display: grid;
+        grid-template-columns: 48.5% 48.5%;
+        justify-content: space-between;
+        border-top: 1px solid $gray;
+        padding: 22px 0;
+
+        &:last-child {
+          border-bottom: 1px solid $gray;
+        }
+
+        .main__content-info {
+          span {
+            font-size: 21px;
+            font-weight: 600;
+          }
+
+          p {
+            font-size: 30px;
+            font-weight: 300;
+          }
+
+          button {
+            font-size: 16px;
+            font-weight: 600;
+            background: none;
+            border: 1px solid $gray;
+            border-radius: 25px;
+            padding: 10px 30px;
+            margin-right: 10px;
+
+            &:hover {
+              background-color: black;
+              color: $white;
+              cursor: pointer;
+            }
+          }
+        }
+
+        .main__content-img--first,
+        .main__content-img--second {
+          background-size: cover;
+          background-position: center center;
+          height: 50vh;
+        }
+
+        .main__content-img--first {
+          background-image: url("../../img/first_newspaper.jpg");
+        }
+
+        .main__content-img--second {
+          background-image: url("../../img/second_newspaper.jpg");
+        }
+      }
+    }
+  }
+
+  .footer {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    background-color: #464646;
+    color: $white;
+    height: 100%;
+    margin-top: 6.5%;
+    padding: 2% 0 5% 10%;
+
+    .footer__main {
+      display: flex;
+      flex-direction: column;
+      font-size: 14px;
+      font-weight: 300;
+
+      .footer__schwartz {
+        font-size: 22px;
+        font-weight: 600;
+        margin-bottom: 15%;
+      }
+
+      div {
+        display: flex;
+        flex-direction: column;
+        margin-top: 4%;
+
+        a {
+          padding-bottom: 1%;
+        }
+      }
+    }
+
+    .footer__media,
+    .footer__books {
+      font-size: 14px;
+      font-weight: 300;
+    }
+
+    a span {
+      text-decoration: none;
+      cursor: pointer;
+    }
+  }
+}
